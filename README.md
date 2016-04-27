@@ -1,7 +1,7 @@
 # `ng-inject`
 
 [![NPM](http://img.shields.io/npm/v/ng-inject.svg)](https://www.npmjs.com/package/ng-inject)
-[![travis-ci](https://travis-ci.org/synacorinc/ng-inject.svg)](https://travis-ci.org/synacorinc/ng-inject)
+[![travis-ci](https://travis-ci.org/synacor/ng-inject.svg)](https://travis-ci.org/synacor/ng-inject)
 
 Decorator that wraps a class in a DI injector for the given dependencies.
 
