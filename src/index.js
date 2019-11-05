@@ -14,15 +14,15 @@
 export default function inject(...deps) {
 	deps = [].concat(...deps).filter(EXISTS);
 
-	return (target, name, descriptor) => {
+	return (Target, name, descriptor) => {
 		function diWrapper(...args) {
 			let resolved = args.splice(0, deps.length);
 			for (let i=0; i<resolved.length; i++) {
-				target.prototype[deps[i]] = resolved[i];
+				Target.prototype[deps[i]] = resolved[i];
 			}
-			return new target(...args);
+			return new Target(...args);
 		}
-		diWrapper.prototype = target.prototype;
+		diWrapper.prototype = Target.prototype;
 		diWrapper.$inject = deps;
 		return diWrapper;
 	};

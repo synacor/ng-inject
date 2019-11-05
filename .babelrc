@@ -1,7 +1,9 @@
 {
-  "loose": "all",
-  "modules": "umd",
-  "stage": 0,
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true}],
+    "@babel/plugin-transform-modules-umd"
+  ],
   "sourceMaps": true,
   "compact": true,
   "comments": false
