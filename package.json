@@ -1,6 +1,6 @@
 {
   "name": "ng-inject",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Decorator that wraps a class in an Angular 1.x DI injector for the given dependencies.",
   "main": "dist/index.js",
   "scripts": {
